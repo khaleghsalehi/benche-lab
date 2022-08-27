@@ -1,0 +1,10 @@
+/home/tomcat/Downloads/cl/clion-2021.3.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/tomcat/Downloads/cl/clion-2021.3.4/bin/ninja/linux/ninja -G Ninja /home/tomcat/code/parraller
+-- The C compiler identification is GNU 11.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/tomcat/code/parraller/cmake-build-debug
