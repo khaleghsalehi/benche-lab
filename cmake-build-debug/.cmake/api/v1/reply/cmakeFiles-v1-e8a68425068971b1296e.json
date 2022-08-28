@@ -21,6 +21,11 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
+			"path" : "/home/tomcat/Downloads/cl/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeUnixFindMake.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
 			"path" : "/home/tomcat/Downloads/cl/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake"
 		},
 		{
@@ -290,6 +295,21 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
+			"path" : "/home/tomcat/Downloads/cl/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeFindCodeBlocks.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomcat/Downloads/cl/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/tomcat/Downloads/cl/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/ProcessorCount.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
 			"path" : "/home/tomcat/Downloads/cl/clion-2021.3.4/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCInformation.cmake"
 		},
 		{
@@ -390,8 +410,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/tomcat/code/parraller/cmake-build-debug",
-		"source" : "/home/tomcat/code/parraller"
+		"build" : "/home/tomcat/code/benche-lab/cmake-build-debug",
+		"source" : "/home/tomcat/code/benche-lab"
 	},
 	"version" : 
 	{

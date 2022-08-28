@@ -1,3 +1,3 @@
-/home/tomcat/code/parraller/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/tomcat/code/parraller/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/tomcat/code/parraller/cmake-build-debug/CMakeFiles/parraller.dir
+/home/tomcat/code/benche-lab/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/tomcat/code/benche-lab/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/tomcat/code/benche-lab/cmake-build-debug/CMakeFiles/parraller.dir

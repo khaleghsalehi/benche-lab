@@ -1,2 +1,2 @@
 all:
-	gcc client.c  -fopenmp -o client
+	gcc src/benchmark.c  -fopenmp -o build/benchmark
