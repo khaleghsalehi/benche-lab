@@ -29,7 +29,7 @@ int main(int argc, char *argv[]) {
 
 #pragma omp parallel
     { // start parallel tasks
-        get_connection(argv[1]);
+        send_req(argv[1]);
     } // end of parallel tasks
 
 

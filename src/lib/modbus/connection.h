@@ -44,7 +44,7 @@ int readCoils(int sockfd, char *request, char *response, size_t len, int t_id) {
     }
 }
 
-void get_connection(char *ip) {
+void send_req(char *ip) {
     while (1 == 1) {
         int sockfd = 0;
         int rconnect = 0;
