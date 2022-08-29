@@ -22,13 +22,16 @@ int main(int argc, char *argv[]) {
     if (argv[2] != NULL)
         THREAD_COUNT = atoi(argv[2]);
 
-    fprintf(stderr, "> start with %d thread\n", THREAD_COUNT);
+    fprintf(stderr, "start load testing  with %d concurrent session\n", THREAD_COUNT);
+
     omp_set_num_threads(THREAD_COUNT);
     if (VERBOSE)
         syslog(LOG_DEBUG, "total thread -> %d ", omp_get_num_threads());
 
-#pragma omp parallel
+    //todo statics
+#pragma omp parallel shared(total_request_count,total_pass,total_failed)
     { // start parallel tasks
+
         send_req(argv[1]);
     } // end of parallel tasks
 

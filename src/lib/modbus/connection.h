@@ -37,8 +37,8 @@ int readCoils(int sockfd, char *request, char *response, size_t len, int t_id) {
     }
 
     readlen = recv(sockfd, (char *) response, RESPLEN, 0);
-    //if (VERBOSE)
-    syslog(LOG_NOTICE, "worker t-id -> {%d}, received length: {%d}", t_id, readlen);
+    if (VERBOSE)
+        syslog(LOG_NOTICE, "worker t-id -> {%d}, received length: {%d}", t_id, readlen);
     if (VERBOSE) {
         buff2hex(response, readlen);
     }
@@ -75,10 +75,12 @@ void send_req(char *ip) {
         unsigned char func_code;
 
         if ((sockfd = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP)) < 0) { // Create a socket
+            total_failed++;
             if (VERBOSE)
                 syslog(LOG_NOTICE, "socket error");
             // exit(1);
         } else {
+            total_pass++;
             if (VERBOSE)
                 syslog(LOG_NOTICE, "socket created.");
         }
@@ -101,11 +103,20 @@ void send_req(char *ip) {
             memcpy(&request[7], &func_code, sizeof(unsigned char));
             memcpy(&request[9], &startAddr, sizeof(unsigned char));
             memcpy(&request[11], &numCoils, sizeof(unsigned char));
-            readCoils(sockfd, request, response, len, omp_get_thread_num());
-            close(sockfd);
-            sleep(1);
+            for (;;) { // ping-pong server via infinite loop
+                readCoils(sockfd, request, response, len, omp_get_thread_num());
+                total_request_count++;
+                if (VERBOSE)
+                    syslog(LOG_NOTICE,
+                           "total_connection_failed ->{%d}  total_connection_bind->{%d}  total_request_sent-> {%d}",
+                           total_failed, total_pass, total_request_count);
+                sleep(1);
+            }
+            sleep(1000);
 
         }
+        close(sockfd);
+
     }
 }
 

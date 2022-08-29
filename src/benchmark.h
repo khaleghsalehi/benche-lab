@@ -7,6 +7,11 @@
 
 #define IPADDR 30
 #define RESPLEN 100
+
+int total_request_count=0;
+int total_pass=0;
+int total_failed=0;
+
 const int VERBOSE = 0;
 const char *TAG = "modbus_fuzzer";
 

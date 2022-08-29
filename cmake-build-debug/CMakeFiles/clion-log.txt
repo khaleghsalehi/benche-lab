@@ -1,5 +1,5 @@
-/home/tomcat/Downloads/cl/clion-2021.3.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/tomcat/code/benche-lab
--- The C compiler identification is GNU 11.2.0
+/home/tomcat/Downloads/clion-2021.3.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/tomcat/Desktop/pp/benche-lab
+-- The C compiler identification is GNU 9.4.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
 -- Check for working C compiler: /usr/bin/cc - skipped
@@ -7,4 +7,4 @@
 -- Detecting C compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/tomcat/code/benche-lab/cmake-build-debug
+-- Build files have been written to: /home/tomcat/Desktop/pp/benche-lab/cmake-build-debug

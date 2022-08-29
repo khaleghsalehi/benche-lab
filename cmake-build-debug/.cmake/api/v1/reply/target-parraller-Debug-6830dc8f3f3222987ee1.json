@@ -94,8 +94,7 @@
 			[
 				1,
 				2,
-				3,
-				4
+				3
 			]
 		}
 	],
@@ -114,17 +113,12 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "src/lib/modbus/modbus.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
 			"path" : "src/lib/safe/util.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "src/lib/connection.h",
+			"path" : "src/lib/modbus/connection.h",
 			"sourceGroupIndex" : 1
 		}
 	],
